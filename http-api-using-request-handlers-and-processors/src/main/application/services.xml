@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2017 Yahoo Holdings. Licensed under the terms of the Apache 2.0 license. See LICENSE in the project root. -->
+<services version="1.0">
+    <container id="default" version="1.0">
+        <processing>
+            <chain id="default">
+                <processor id="com.mydomain.demo.AnnotatingProcessor" bundle="http-api-using-request-handlers-and-processors">
+                    <config name="com.mydomain.demo.demo">
+                        <demo>
+                            <item>
+                                <term>smurf</term>
+                            </item>
+                        </demo>
+                    </config>
+                </processor>
+                <processor id="com.mydomain.demo.DataProcessor" bundle="http-api-using-request-handlers-and-processors" />
+            </chain>
+            <renderer id="demo" class="com.mydomain.demo.DemoRenderer" bundle="http-api-using-request-handlers-and-processors" />
+        </processing>
+        <handler id="com.mydomain.demo.DemoHandler" bundle="http-api-using-request-handlers-and-processors">
+            <binding>http://*/demo</binding>
+        </handler>
+        <component id="com.mydomain.demo.DemoComponent" bundle="http-api-using-request-handlers-and-processors"/>
+    </container>
+</services>

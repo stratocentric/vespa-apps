@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright Verizone Media. Licensed under the terms of the Apache 2.0 license. See LICENSE in the project root. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.yahoo.vespa</groupId>
+    <artifactId>sampleapps-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>7.3.19</version>
+    <name>sampleapps-parent</name>
+    <description>Parent artifact for all Java Vespa sample apps.</description>
+
+    <modules>
+        <module>blog-recommendation</module>
+        <module>boolean-search</module>
+        <module>generic-request-processing</module>
+        <module>http-api-using-request-handlers-and-processors</module>
+        <module>model-evaluation</module>
+        <module>multiple-bundles-lib</module>
+        <module>multiple-bundles</module>
+        <module>tensor-playground</module>
+        <module>text-search</module>
+        <module>use-case-shopping</module>
+        <module>vespa-chinese-linguistics</module>
+        <module>vespa-cloud/album-recommendation-searcher</module>
+        <module>vespa-cloud/album-recommendation-docproc</module>
+        <module>vespa-cloud/cord-19-search</module>
+        <module>vespa-cloud/vespa-documentation-search</module>
+        <module>dense-passage-retrieval-with-ann</module>
+        <module>msmarco-ranking</module>
+        <module>transformers</module>
+    </modules>
+</project>

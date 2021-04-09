@@ -1,0 +1,12 @@
+*.iml
+*.idea
+*~
+.vagrant/
+.DS_Store
+target/
+.project
+.settings/
+.classpath
+vespaapps_index.json
+_site/
+*.pem
